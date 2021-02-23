@@ -1,3 +1,6 @@
 HP_Klestil/node_modules/
 HP_Klestil/node_modules
 /node_modules
+
+# Ignore (generated) afphoto files,
+*.afphoto
