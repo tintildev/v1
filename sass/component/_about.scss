@@ -1,0 +1,24 @@
+.about {
+    grid-column: center-start / center-end;
+    margin: 15rem 0;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+        margin: 1rem;
+        fill: $color-primary;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        border: $default-border-radius;
+        box-shadow: $default-shadow;
+    }
+
+    &__text {
+        font-size: 1.7rem;
+    }
+}

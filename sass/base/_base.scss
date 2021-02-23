@@ -1,41 +1,88 @@
-//Basis Datein
+// COLOR VARIABLES
+
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary: #101d2c;
+$color-secondary-dark:  #030608;;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-1: #999;
+$color-grey-dark-2: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+// FONT VARIABLES
+$font-primary: "Lato", sans-serif;
+$font-display: "Lato", sans-serif;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// BORDER
+$default-border-radius: 3px;
+$default-shadow: 0 3rem 6rem rgba($color-black, .1);
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+
 
 *,
-*::after,
-*::before{
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
 
-html{
-    // Defeniert was 1 rem ist.
-    font-size: 62.5%;       //1 rem = 10px, 10px/16px = 62.5%
-
-    @include respond(tab-land){     // width < 1200 ?  
-        font-size: 56.25%;          //1 rem = 9px, 9px/16px = 56.25%
-    }
-
-    @include respond(tab-port){     // width < 900 ?
-        font-size: 50%;             //1 rem = 8px, 8px/16px = 50%
-    }
-
-    @include respond(big-desktop){  
-        font-size: 75%;             //1 rem = 10px, 10px/16px = 75%
-    }
-    
-}
-
-body{
+html {
     box-sizing: border-box;
-    padding: 3rem;
+    font-size: 62.5%;
+    /* 10px/16px = 62.5% -> 1rem = 10px */
 
-    @include respond(tab-port){     
-        padding: 0;            
+    @media only screen and (max-width: $bp-largest){
+        font-size: 50%; 
     }
+
+
 }
 
-::selection{
-    background-color: $color-primary;
-    color: $color-white;
+body {
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 90vh min-content 40vw repeat(3, min-content);
+    /* 8 grid test grid */
+    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) 
+                           [center-start] repeat(8,[col-start] minmax(min-content, 14rem)[col-end])[center-end]
+                           minmax(6rem, 1fr)  [full-end];
+    /* Sidebare, 1fr placeholder, 8 grid, 1fr placeholder */
+
+
+    @media only screen and (max-width: $bp-large){
+        grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+        grid-template-columns: [full-start] minmax(6rem, 1fr) 
+                           [center-start] repeat(8,[col-start] minmax(min-content, 14rem)[col-end])[center-end]
+                           minmax(6rem, 1fr)  [full-end];
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        grid-template-rows: 6rem calc(100vh - 6rem);
+    }
+
+   
 }
