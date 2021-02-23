@@ -1,8 +1,9 @@
-.features {
+.section-features {
     grid-column: center-start / center-end;
-
     margin: 15rem 0;
+}
 
+.features-container {
     display: grid;
     // auto-fit - different numbers of columns are created depending on how many fit into the viewport.
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -27,5 +28,11 @@
 
     &__text {
         font-size: 1.7rem;
+
+        &--center {
+            text-align: center;
+            font-size: 1.7rem;
+            margin-bottom: 5vh;
+        }
     }
 }

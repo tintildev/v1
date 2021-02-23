@@ -9,6 +9,7 @@
     font-size: 4.5rem;
     color: $color-white;
     line-height: 1;
+    text-transform: uppercase;
 
     &--center {
         text-align: center;
@@ -47,13 +48,13 @@
     }
 
     &--black {
-        font-size: 4rem;
-        line-height: 1;
         font-weight: 300;
         color: $color-black;
         font-size: 4rem;
         text-transform: uppercase;
         line-height: 1;
+        margin-bottom: 2vh;
+        text-align: center;
     }
 }
 

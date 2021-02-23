@@ -1,6 +1,6 @@
 .header {
     background-color: $color-grey-dark-1;
-    grid-column: sidebar-start / full-end;
+    grid-column: full-start / full-end;
     background-image: linear-gradient(rgba($color-secondary, .93), 
                         rgba($color-secondary, .93)), 
                         url(../img/hero.jpg);
@@ -10,7 +10,7 @@
     padding-top: 4rem;
 
     display: grid;
-    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-rows: minmax(20rem, min-content) repeat(6, min-content) ;
     grid-template-columns: minmax(min-content, max-content);
     grid-row-gap: 1.5rem;
     justify-content: center;

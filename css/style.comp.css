@@ -21,17 +21,15 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 90vh min-content 40vw repeat(3, min-content);
-  /* 8 grid test grid */
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  /* Sidebare, 1fr placeholder, 8 grid, 1fr placeholder */ }
+  grid-template-rows: 90vh repeat(8, minmax(40vh, min-content));
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media only screen and (max-width: 62.5em) {
     .container {
-      grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+      grid-template-rows: 80vh repeat(8, minmax(40vh, min-content));
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
   @media only screen and (max-width: 50em) {
     .container {
-      grid-template-rows: 6rem calc(100vh - 6rem); } }
+      grid-template-rows: calc(100vh - 6rem); } }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Lato", sans-serif;
@@ -40,7 +38,8 @@ body {
 .heading-1 {
   font-size: 4.5rem;
   color: #fff;
-  line-height: 1; }
+  line-height: 1;
+  text-transform: uppercase; }
   .heading-1--center {
     text-align: center;
     font-size: 4.5rem;
@@ -69,13 +68,13 @@ body {
     font-weight: 300;
     color: #999; }
   .heading-2--black {
-    font-size: 4rem;
-    line-height: 1;
     font-weight: 300;
     color: #000;
     font-size: 4rem;
     text-transform: uppercase;
-    line-height: 1; }
+    line-height: 1;
+    margin-bottom: 2vh;
+    text-align: center; }
 
 .heading-3 {
   font-size: 1.6rem;
@@ -105,7 +104,8 @@ body {
 
 .about {
   grid-column: center-start / center-end;
-  margin: 15rem 0; }
+  margin-top: 10vh;
+  margin-bottom: 30vh; }
 
 .about_me {
   display: flex;
@@ -208,9 +208,11 @@ body {
     color: #eee;
     margin-top: -3px; }
 
-.features {
+.section-features {
   grid-column: center-start / center-end;
-  margin: 15rem 0;
+  margin: 15rem 0; }
+
+.features-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
@@ -228,6 +230,10 @@ body {
     grid-row: 1 / span 2; }
   .feature__text {
     font-size: 1.7rem; }
+    .feature__text--center {
+      text-align: center;
+      font-size: 1.7rem;
+      margin-bottom: 5vh; }
 
 .story__pictures {
   background-color: #55c57a;
@@ -403,16 +409,60 @@ body {
   .home__btn {
     grid-column: 1 / -1; }
 
+.section-break {
+  grid-column: full-start / full-end;
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/mk-5.jpg);
+  background-size: cover;
+  margin-top: -10rem;
+  transform: skewY(-3deg); }
+  .section-break > * {
+    transform: skewY(3deg); }
+  @media only screen and (max-width: 50em) {
+    .section-break {
+      padding: 10rem 0; } }
+
+.break-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, max-content));
+  grid-column-gap: 4rem;
+  padding: 2rem;
+  grid-row-gap: 4rem; }
+
+.break-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  @media only screen and (max-width: 50em) {
+    .break-box {
+      padding: 2rem; } }
+  .break-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
+    @media only screen and (max-width: 50em) {
+      .break-box__icon {
+        margin-bottom: 0; } }
+  .break-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
 .header {
   background-color: #999;
-  grid-column: sidebar-start / full-end;
+  grid-column: full-start / full-end;
   background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
   padding: 8rem;
   padding-top: 4rem;
   display: grid;
-  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-rows: minmax(20rem, min-content) repeat(6, min-content);
   grid-template-columns: minmax(min-content, max-content);
   grid-row-gap: 1.5rem;
   justify-content: center; }

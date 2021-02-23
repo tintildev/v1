@@ -1,25 +1,34 @@
 .section-break{
+    grid-column: full-start / full-end;
     padding: 20rem 0;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)), 
-        url(../img/mk-3.jpg);
+        url(../img/mk-5.jpg);
     background-size: cover;
     margin-top: -10rem;
 
-    transform: skewY(-7deg);
+    transform: skewY(-3deg);
 
     & > * {
-        transform: skewY(7deg);
+        transform: skewY(3deg);
     }
 
-    @include respond(tab-port){
+    @media only screen and (max-width: $bp-medium){
         padding: 10rem 0;
     }
     
 }
 
+.break-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, max-content));
+    grid-column-gap: 4rem;
+    padding: 2rem;
+    grid-row-gap: 4rem;
+
+}
 
 .break-box{
     background-color: rgba($color-white, .8);
@@ -30,7 +39,7 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: transform .3s;
 
-    @include respond(tab-port){
+    @media only screen and (max-width: $bp-medium){
         padding: 2rem;
     }
 
@@ -42,7 +51,7 @@
         -webkit-background-clip: text;
         color: transparent;
 
-        @include respond(tab-port){
+        @media only screen and (max-width: $bp-medium){
             margin-bottom: 0;
         }
     }
