@@ -462,7 +462,7 @@ body {
   padding: 8rem;
   padding-top: 4rem;
   display: grid;
-  grid-template-rows: minmax(20rem, min-content) repeat(6, min-content);
+  grid-template-rows: minmax(20rem, min-content) repeat(8, min-content);
   grid-template-columns: minmax(min-content, max-content);
   grid-row-gap: 1.5rem;
   justify-content: center; }
