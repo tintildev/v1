@@ -20,7 +20,7 @@
     grid-column-gap: 1.5rem;
 
     &__icon {
-        fill: $color-primary;
+        fill: var(--color-primary);
         width: 4.5rem;
         height: 4.5rem;
         grid-row: 1 / span 2;

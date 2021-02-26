@@ -11,12 +11,12 @@
 
     &__img {
         margin: 1rem;
-        fill: $color-primary;
+        fill: var(--color-primary);
         width: 20rem;
         height: 20rem;
         border-radius: 50%;
-        border: $default-border-radius;
-        box-shadow: $default-shadow;
+        border: var(--default-border-radius);
+        box-shadow: var(--default-shadow);
     }
 
     &__text {

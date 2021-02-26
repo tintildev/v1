@@ -1,15 +1,16 @@
 .btn{
-    background-color: $color-primary;
+    background-color: var(--color-primary);
     color: #fff;
-    border: none;
+    border: solid 1px var(--color-primary);
     border-radius: 0;
-    font-family: $font-display;
-    font-size: $medium-font-size;
+    font-family: var(--font-display);
+    font-size: var(--medium-font-size);
     text-transform: uppercase;
     padding: 1.8rem 3rem;
     cursor: pointer;
+    transition: all .2s;
 
     &:hover {
-        background-color: $color-grey-dark-1;
+        background-color: var(--color-grey-light-1);
     }
 }

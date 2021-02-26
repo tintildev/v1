@@ -1,40 +1,49 @@
-// COLOR VARIABLES
+:root {
+    // COLOR VARIABLES
+    --color-primary: #55c57a;
+    --color-primary-light: #7ed56f;
+    --color-primary-dark: #28b485;
+    --color-primary-light-transparent: #7ed56fd6;
+    --color-primary-dark-transparent: #28b485a6;
 
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+    --color-secondary: #101d2c;
+    --color-secondary-dark:  #030608;
+    --color-secondary-light: #101d2c69;
 
-$color-secondary: #101d2c;
-$color-secondary-dark:  #030608;;
+    --color-grey-light-1: #f7f7f7;
+    --color-grey-light-2: #eee;
 
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
+    --color-grey-dark: #777;
+    --color-grey-dark-1: #999;
+    --color-grey-dark-2: #333;
 
-$color-grey-dark: #777;
-$color-grey-dark-1: #999;
-$color-grey-dark-2: #333;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-black-transparent: rgba(0, 0, 0, 0.267);
 
-$color-white: #fff;
-$color-black: #000;
+    // FONT VARIABLES
+    --font-primary: "Lato", sans-serif;
+    --font-display: "Lato", sans-serif;
 
-// FONT VARIABLES
-$font-primary: "Lato", sans-serif;
-$font-display: "Lato", sans-serif;
+    // FONT
+    --bigger-font-size: 2.25rem;
+    --big-font-size: 1.6rem;
+    --medium-font-size: 1.5rem;
+    --default-font-size: 1.4rem;
+    --small-font-size: 1.2rem;
+    --tiny-font-size: 0.8rem;
 
-// FONT
-$default-font-size: 1.6rem;
+    // BORDER
+    --default-border-radius: 3px;
+    --default-shadow: 0 3rem 6rem var(--color-black-transparent);
+    --default-shadow-light: 0 1.5rem 4rem var(--color-black-transparent);
 
-// BORDER
-$default-border-radius: 3px;
-$default-shadow: 0 3rem 6rem rgba($color-black, .1);
-
-// RESPONSIVE BREAKPOINTS
-$bp-largest: 75em; //1200px
-$bp-large: 62.5em; //1000px
-$bp-medium: 50em; //800px
-$bp-small: 37.5em; //600px
-
-
+    // RESPONSIVE BREAKPOINTS
+    --bp-largest: 75em; //1200px
+    --bp-large: 62.5em; //1000px
+    --bp-medium: 50em; //800px
+    --bp-small: 37.5em; //600px
+  }
 
 *,
 *::before,
@@ -49,7 +58,7 @@ html {
     font-size: 62.5%;
     /* 10px/16px = 62.5% -> 1rem = 10px */
 
-    @media only screen and (max-width: $bp-largest){
+    @media only screen and (max-width: var(--bp-largest)){
         font-size: 50%; 
     }
 
@@ -58,8 +67,8 @@ html {
 
 
 body {
-    font-family: $font-primary;
-    color: $color-grey-dark-2;
+    font-family: var(--font-primary);
+    color: var(--color-grey-dark-2);
     font-weight: 300;
     line-height: 1.6;
 }
@@ -71,14 +80,14 @@ body {
                            [center-start] repeat(8,[col-start] minmax(min-content, 14rem)[col-end])[center-end]
                            minmax(6rem, 1fr)  [full-end];
     
-    @media only screen and (max-width: $bp-large){
+    @media only screen and (max-width: var(--bp-large)){
         grid-template-rows: 80vh repeat(8, minmax(40vh, min-content));
         grid-template-columns: [full-start] minmax(6rem, 1fr) 
                            [center-start] repeat(8,[col-start] minmax(min-content, 14rem)[col-end])[center-end]
                            minmax(6rem, 1fr)  [full-end];
     }
 
-    @media only screen and (max-width: $bp-medium){
+    @media only screen and (max-width: var(--bp-medium)){
         grid-template-rows: calc(100vh - 6rem);
     }
 

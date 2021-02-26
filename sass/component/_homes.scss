@@ -8,7 +8,7 @@
 }
 
 .home {
-    background-color: $color-grey-light-1;
+    background-color: var(--color-grey-light-1);
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -42,11 +42,11 @@
         width: 80%;
         justify-self: center;
 
-        font-family: $font-display;
-        font-size: $big-font-size;
+        font-family: var(--font-display);
+        font-size: var(--big-font-size);
         text-align: center;
         padding: 1.25rem;
-        background-color: $color-secondary;
+        background-color: var(--color-secondary);
         color: #fff;
         font-weight: 400;
         //Centered alignment
@@ -63,14 +63,13 @@
     &__area,
     &__price {
 
-        font-size: $medium-font-size;
+        font-size: var(--medium-font-size);
         margin-left: 2rem;
         display: flex;
         align-items: center;
 
         img {
-            fill: $color-primary;
-            height: 2rem;
+            fill: var(--color-primary);
             width: 2rem;
             margin-right: 1rem;
         }

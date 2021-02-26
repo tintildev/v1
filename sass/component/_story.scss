@@ -1,10 +1,10 @@
 .story {
 
     &__pictures{
-        background-color: $color-primary;
+        background-color: var(--color-primary);
         grid-column: full-start / col-end 4;
-        background-image: linear-gradient(rgba($color-primary, .5), 
-                                          rgba($color-primary, .5)), 
+        background-image: linear-gradient(rgba(var(--color-primary), .5), 
+                                          rgba(var(--color-primary), .5)), 
                                           url(../img/back.jpg);
                                           
         background-size: cover;
@@ -14,7 +14,7 @@
         grid-template-columns: repeat(6, 1fr);
         align-items: center;
 
-        @media only screen and (max-width: $bp-medium){
+        @media only screen and (max-width: var(--bp-medium)){
             grid-column: 1 / -1;
             padding: 3rem;
         }
@@ -26,7 +26,7 @@
         grid-column: 2 / 6;
         box-shadow: 0 2rem 5rem rgba(#000, .2);
 
-        @media only screen and (max-width: $bp-medium){
+        @media only screen and (max-width: var(--bp-medium)){
             grid-column: 1 / 5;
             grid-row: 1 / -1;
             width: 100%;
@@ -41,7 +41,7 @@
         z-index: 20;
         box-shadow: 0 2rem 5rem rgba(#000, .3);
 
-        @media only screen and (max-width: $bp-medium){
+        @media only screen and (max-width: var(--bp-medium)){
             grid-row: 1 / -1;
             width: 100%;
         }
@@ -50,7 +50,7 @@
 
 
     &__content{
-        background-color: $color-grey-light-1;
+        background-color: var(--color-grey-light-1);
         grid-column: col-start 5 / full-end;
 
         padding: 6rem 8vw;
@@ -70,14 +70,14 @@
         align-content: center;
         justify-items: start;
 
-        @media only screen and (max-width: $bp-medium){
+        @media only screen and (max-width: var(--bp-medium)){
             grid-column: 1 / -1;
             grid-row: 5 / 6;
         }
     }
 
     &__text {
-        font-size: $medium-font-size;
+        font-size: var(--medium-font-size);
         font-style: italic;
         margin-bottom: 4rem;
     }

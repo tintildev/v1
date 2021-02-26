@@ -1,8 +1,8 @@
 .header {
-    background-color: $color-grey-dark-1;
+    background-color: var(--color-grey-dark-1);
     grid-column: full-start / full-end;
-    background-image: linear-gradient(rgba($color-secondary, .93), 
-                        rgba($color-secondary, .93)), 
+    background-image: linear-gradient(var(--color-secondary-light), 
+                        var(--color-secondary-light)), 
                         url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -15,11 +15,11 @@
     grid-row-gap: 1.5rem;
     justify-content: center;
 
-    @media only screen and (max-width: $bp-medium){
+    @media only screen and (max-width: var(--bp-medium)){
         grid-column: 1 / -1;
     }
 
-    @media only screen and (max-width: $bp-small){
+    @media only screen and (max-width: var(--bp-small)){
        padding: 5rem;
     }
 
@@ -30,8 +30,13 @@
     }
 
     &__btn {
+        background-color: transparent;
         align-self: start;
-        justify-self: center;
+        justify-self: start;
+
+        &:hover {
+            background-color: var(--color-primary);
+        }
 
     }
 
@@ -42,8 +47,8 @@
         align-items: center;
 
 
-        font-size: $big-font-size;
-        color: $color-grey-light-2;
+        font-size: var(--big-font-size);
+        color: var(--color-grey-light-2);
 
         &::before,
         &::after {
