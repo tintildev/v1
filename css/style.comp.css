@@ -137,6 +137,12 @@ body {
 .mb-hg {
   margin-bottom: 8rem; }
 
+.fab {
+  font-size: 4rem; }
+
+.fas {
+  font-size: 4rem; }
+
 .about {
   grid-column: center-start / center-end;
   margin-top: 10vh;
@@ -250,13 +256,13 @@ body {
 
 .features-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   grid-gap: 6rem;
   align-items: start; }
 
 .feature {
   display: grid;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: min-content;
   grid-row-gap: 1.5rem;
   grid-column-gap: 1.5rem; }
   .feature__icon {
