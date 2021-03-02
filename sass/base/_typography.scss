@@ -4,88 +4,104 @@
     font-weight: 400;
 }
 
-.heading-1 {
-    @extend %heading;
-    font-size: 4.5rem;
-    color: var(--color-white);
-    line-height: 1;
-    text-transform: uppercase;
-
-    &--center {
-        text-align: center;
+.heading {
+    &-1 {
+        @extend %heading;
         font-size: 4.5rem;
         color: var(--color-white);
         line-height: 1;
-    }
-
-    &--black {
-        text-align: center;
-        font-size: 4.5rem;
-        color: var(--color-black);
-        line-height: 1;
-        text-transform: uppercase
-    }
-}
-
-.heading-2 {
-    @extend %heading;
-    font-size: 4rem;
-    font-style: italic;
-    line-height: 1;
-    font-weight: 300;
-
-    &--light {
-        font-size: 4rem;
-        line-height: 1;
-        font-weight: 300;
-        color: var(--color-grey-light-1);
-    }
-    &--dark {
-        font-size: 4rem;
-        line-height: 1;
-        font-weight: 300;
-        color: var(--color-grey-dark-1);
-    }
-
-    &--black {
-        font-weight: 300;
-        color: var(--color-black);
-        font-size: 4rem;
         text-transform: uppercase;
+    
+        &--center {
+            text-align: center;
+            font-size: 4.5rem;
+            color: var(--color-white);
+            line-height: 1;
+        }
+    
+        &--black {
+            text-align: center;
+            font-size: 4.5rem;
+            color: var(--color-black);
+            line-height: 1;
+            text-transform: uppercase
+        }
+    }
+    &-2 {
+        @extend %heading;
+        font-size: 4rem;
+        font-style: italic;
         line-height: 1;
-        margin-bottom: 2vh;
+        font-weight: 300;
+    
+        &--light {
+            font-size: 4rem;
+            line-height: 1;
+            font-weight: 300;
+            color: var(--color-grey-light-1);
+        }
+        &--dark {
+            font-size: 4rem;
+            line-height: 1;
+            font-weight: 300;
+            color: var(--color-grey-dark-1);
+        }
+    
+        &--black {
+            font-weight: 300;
+            color: var(--color-black);
+            font-size: 4rem;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-bottom: 2vh;
+            text-align: center;
+        }
+    }
+    &-3 {
+        @extend %heading;
+        font-size: 1.6rem;
+        color: var(--color-primary);
+        text-transform: uppercase;
+    }
+    &-4 {
+        @extend %heading;
+        font-size: 1.9rem;
         text-align: center;
+        color: var(--color-white);
+    
+        &--light {
+            @extend %heading;
+            font-size: 1.9rem;
+            color: var(--color-grey-light-1);
+        }
+        &--dark {
+            @extend %heading;
+            font-size: 1.9rem;
+            color: var(--color-grey-dark-1);
+        }
+    }
+    &--main {
+        animation: moveInLeft .5s ease-out .5s;
+        animation-fill-mode: both;
+
+    }
+    &--sub{
+        animation: moveInRight .5s ease-out .5s;
+        animation-fill-mode: both;
+
+    }
+    &--section{
+        grid-column: 1 / -1;
     }
 }
 
-.heading-3 {
-    @extend %heading;
-    font-size: 1.6rem;
-    color: var(--color-primary);
-    text-transform: uppercase;
-}
 
-.heading-4 {
-    @extend %heading;
-    font-size: 1.9rem;
-    text-align: center;
-    color: var(--color-white);
 
-    &--light {
-        @extend %heading;
-        font-size: 1.9rem;
-        color: var(--color-grey-light-1);
-    }
-    &--dark {
-        @extend %heading;
-        font-size: 1.9rem;
-        color: var(--color-grey-dark-1);
-    }
-}
 
-.heading--section{
-    grid-column: 1 / -1;
-}
+
+
+
+
 
 
 

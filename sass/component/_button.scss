@@ -13,4 +13,17 @@
     &:hover {
         background-color: var(--color-grey-light-1);
     }
+
+    &__btn--animated {
+        background-color: transparent;
+        align-self: start;
+        justify-self: start;
+        animation: moveInBottom .5s ease-out .5s both;
+        
+        &:hover {
+            background-color: var(--color-primary);
+        }
+    
+    }
 }
+
