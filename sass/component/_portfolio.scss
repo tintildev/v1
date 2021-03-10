@@ -14,6 +14,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 3.5rem;
 
+    &__text {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+        font-size: var(--default-font-size);
+    }
+
     &__img {
         width: 100%;
         grid-row: 1 / 2;
@@ -53,15 +59,16 @@
         transform: translateY(50%);
     }
 
-    &__location,
-    &__rooms {
+    &__area,
+    &__tech {
         margin-top: 2.5rem;
     }
 
     &__location,
-    &__rooms,
+    &__tech,
     &__area,
-    &__price {
+    &__price,
+    &__text {
 
         font-size: var(--medium-font-size);
         margin-left: 2rem;

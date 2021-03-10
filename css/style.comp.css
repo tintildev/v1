@@ -481,6 +481,10 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 3.5rem; }
+  .project__text {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    font-size: var(--default-font-size); }
   .project__img {
     width: 100%;
     grid-row: 1 / 2;
@@ -509,14 +513,14 @@ body {
     color: #fff;
     font-weight: 400;
     transform: translateY(50%); }
-  .project__location, .project__rooms {
+  .project__area, .project__tech {
     margin-top: 2.5rem; }
-  .project__location, .project__rooms, .project__area, .project__price {
+  .project__location, .project__tech, .project__area, .project__price, .project__text {
     font-size: var(--medium-font-size);
     margin-left: 2rem;
     display: flex;
     align-items: center; }
-    .project__location img, .project__rooms img, .project__area img, .project__price img {
+    .project__location img, .project__tech img, .project__area img, .project__price img, .project__text img {
       fill: var(--color-primary);
       width: 2rem;
       margin-right: 1rem; }
