@@ -9,10 +9,11 @@
     &__pictures{
         background-color: var(--color-primary);
         grid-column: 1 / 3;
-        background-image: linear-gradient(rgba(var(color-primary-light-transparent), .5), 
-                                          rgba(var(color-primary-dark-transparent), .5)), 
-                                          url(../img/back.jpg);
-                                          
+        background-image: linear-gradient(
+            to right bottom,
+            var(--color-primary-light-transparent), 
+            var(--color-primary-dark-transparent)), 
+            url(../img/back.jpg);
         background-size: cover;
 
         display: grid;
