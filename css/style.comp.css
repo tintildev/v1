@@ -198,6 +198,9 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
+.fa-facebook-square:hover {
+  color: #3B5998; }
+
 .about {
   grid-column: center-start / center-end;
   margin-top: 10vh;

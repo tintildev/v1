@@ -196,12 +196,12 @@
             <img class="footer__logo" src="img/logo.png">
             <hr>
             <ul class="nav footer__nav">
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank"><i class="fab fa-linkedin"></i></i></a></li>
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank"><i class="fab fa-xing-square"></i></a></li>
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Impressum</a></li>
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Datenschutz</a></li>
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Kontakt</a></li>
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank">LinkedIn</a></li>
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank">Twitter</a></li>
+                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank">Xing</a></li>
             </ul>
             <hr>
             <p class="footer__copyright">
