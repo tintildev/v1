@@ -277,6 +277,12 @@ body {
     animation: moveInBottom .5s ease-out .5s both; }
     .btn__btn--animated:hover {
       background-color: var(--color-primary); }
+  .btn__btn--smart {
+    background-color: transparent;
+    align-self: start;
+    justify-self: start; }
+    .btn__btn--smart:hover {
+      background-color: var(--color-primary); }
 
 .realtors {
   background-color: var(--color-secondary);
@@ -529,7 +535,7 @@ body {
 
 .section-break {
   grid-column: full-start / full-end;
-  padding: 20rem 0;
+  padding: 15rem 0;
   background-image: linear-gradient(to right bottom, var(--color-primary-light-transparent), var(--color-primary-dark-transparent)), url(../img/mk-5.jpg);
   background-size: cover;
   margin-top: -10rem;
@@ -540,7 +546,7 @@ body {
     .section-break {
       padding: 10rem 0; } }
 
-.break-container {
+.break__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, max-content));
   grid-column-gap: 4rem;
@@ -548,7 +554,11 @@ body {
   grid-row-gap: 4rem;
   justify-content: center; }
 
-.break-box {
+.break__title {
+  text-align: center;
+  text-transform: uppercase; }
+
+.break__box {
   background-color: var(--color-white);
   font-size: 1.5rem;
   padding: 2.5rem;
@@ -558,9 +568,9 @@ body {
   box-shadow: var(--default-shadow);
   transition: transform .3s; }
   @media only screen and (max-width: var(--bp-medium)) {
-    .break-box {
+    .break__box {
       padding: 2rem; } }
-  .break-box__icon {
+  .break__box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
@@ -568,9 +578,9 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
     @media only screen and (max-width: var(--bp-medium)) {
-      .break-box__icon {
+      .break__box__icon {
         margin-bottom: 0; } }
-  .break-box:hover {
+  .break__box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
 .header {
@@ -621,7 +631,7 @@ body {
 .footer {
   background-color: var(--color-secondary);
   grid-column: full-start / full-end;
-  padding: 8rem;
+  padding: 4rem;
   display: grid; }
   .footer__logo {
     justify-self: center;
@@ -661,6 +671,16 @@ body {
         color: #1DA1F2; }
       .footer__nav--link:hover i.fa-xing-square, .footer__nav--link:active i.fa-xing-square {
         color: #cfdc00; }
+  .footer__info {
+    font-size: var(--big-font-size);
+    justify-self: center;
+    color: var(--color-white);
+    margin-bottom: 2rem; }
+  .footer__btn {
+    justify-self: center;
+    width: 15vw;
+    height: auto;
+    margin-bottom: 2rem; }
   .footer__copyright {
     font-size: var(--default-font-size);
     color: var(--color-grey-light-1);

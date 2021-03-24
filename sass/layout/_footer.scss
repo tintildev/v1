@@ -1,7 +1,7 @@
 .footer {
     background-color: var(--color-secondary);
     grid-column: full-start / full-end;
-    padding: 8rem;
+    padding: 4rem;
     display: grid;
 
     &__logo{
@@ -63,6 +63,20 @@
             }
             
         }
+    }
+
+    &__info {
+        font-size: var(--big-font-size);
+        justify-self: center;
+        color: var(--color-white);
+        margin-bottom: 2rem;
+    }
+
+    &__btn {
+        justify-self: center;
+        width: 15vw;
+        height: auto;
+        margin-bottom: 2rem;
     }
 
     &__copyright {

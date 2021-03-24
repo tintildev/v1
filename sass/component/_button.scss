@@ -23,6 +23,16 @@
         &:hover {
             background-color: var(--color-primary);
         }
+    }
+
+    &__btn--smart {
+        background-color: transparent;
+        align-self: start;
+        justify-self: start;
+        
+        &:hover {
+            background-color: var(--color-primary);
+        }
     
     }
 }

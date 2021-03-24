@@ -22,7 +22,7 @@
             <h1 class="heading-1 heading--main">MARTIN KLESTIL.</h1>
             <h1 class="heading-1 heading--main">I love to code.</h1>
             <h4 class="heading-4 heading--sub">I'm Martin Klestil from Tulln, Austria. Here you can see my path to becoming a web developer.</h4>
-            <button class="btn btn__btn--animated">My portfolio</button>
+            <a href="#portfolio"><button class="btn btn__btn--animated">My portfolio</button></a>
             
         </header>
 
@@ -37,8 +37,9 @@
             </div>
         </section>
         <section class="section-break">
-            <div class="break-container">
-                <div class="break-box">
+            <h2 class="heading-2--light break__title">What I Do</h2>
+            <div class="break__container">
+                <div class="break__box">
                     
                     <i class="feature-box__icon icon-basic-world"></i>
                     <h3 class="heading-tertiary u-margin-bottom-small">Frontend</h3>
@@ -46,7 +47,7 @@
                         HTML, CSS, SASS, <br> JavaScript, React, Angular
                     </p>
                 </div>
-                <div class="break-box">
+                <div class="break__box">
                     
                     <i class="feature-box__icon icon-basic-world"></i>
                     <h3 class="heading-tertiary u-margin-bottom-small">Backend</h3>
@@ -54,7 +55,7 @@
                         Java, Spring, php, Python
                     </p>
                 </div>
-                <div class="break-box">
+                <div class="break__box">
                     
                     <i class="feature-box__icon icon-basic-world"></i>
                     <h3 class="heading-tertiary u-margin-bottom-small">Database</h3>
@@ -62,7 +63,7 @@
                         MySQL, SQLite
                     </p>
                 </div>
-                <div class="break-box">
+                <div class="break__box">
                     
                     <i class="feature-box__icon icon-basic-world"></i>
                     <h3 class="heading-tertiary u-margin-bottom-small">Design</h3>
@@ -129,11 +130,11 @@
                 <p class="story__text">
                     This project was implemented with Sass, JavaScript, PHP and Wordpress.
                 </p>
-                <button class="btn"><a href="https://www.ff-michelhausen.at/" target="_blank"></a>Feuerwehr Michelhausen</button>
+                <a href="https://www.ff-michelhausen.at/" target="_blank"><button class="btn">Feuerwehr Michelhausen</button></a>
             </div>
         </section>
         
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="project">
                 <img src="img/Game-1.png" alt="Game 1" class="project__img">
                 <img class="project__like" alt="heart" src="img/heart.svg"></img>
@@ -193,6 +194,8 @@
         </section>
 
         <footer class="footer">
+            <p class="footer__info">Whether you have an idea for a project or just want to chat, feel free to shoot me an email!</p>
+            <a class="footer__btn" href="mailto:"><button class="btn btn__btn--smart">Say Hello</button></a>
             <img class="footer__logo" src="img/logo.png">
             <hr>
             <ul class="nav footer__nav">
