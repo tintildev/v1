@@ -198,9 +198,6 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
-.fa-facebook-square:hover {
-  color: #3B5998; }
-
 .about {
   grid-column: center-start / center-end;
   margin-top: 10vh;
@@ -652,6 +649,18 @@ body {
     .footer__nav--link:hover, .footer__nav--link:active {
       background-color: rgba(255, 255, 255, 0.5);
       transform: translateY(-3px); }
+      .footer__nav--link:hover i.fa-facebook-square, .footer__nav--link:active i.fa-facebook-square {
+        color: #3B5998; }
+      .footer__nav--link:hover i.fa-instagram-square, .footer__nav--link:active i.fa-instagram-square {
+        color: #8a3ab9; }
+      .footer__nav--link:hover i.fa-github-square, .footer__nav--link:active i.fa-github-square {
+        color: #211F1F; }
+      .footer__nav--link:hover i.fa-linkedin, .footer__nav--link:active i.fa-linkedin {
+        color: #0077B5; }
+      .footer__nav--link:hover i.fa-twitter-square, .footer__nav--link:active i.fa-twitter-square {
+        color: #1DA1F2; }
+      .footer__nav--link:hover i.fa-xing-square, .footer__nav--link:active i.fa-xing-square {
+        color: #cfdc00; }
   .footer__copyright {
     font-size: var(--default-font-size);
     color: var(--color-grey-light-1);

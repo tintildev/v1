@@ -37,9 +37,31 @@
         }
     
         &--link:hover,
-        &--link:active {
+        &--link:active{
             background-color: rgba(#fff, .5);
             transform: translateY(-3px);
+
+            & i {
+                &.fa-facebook-square{
+                        color: #3B5998;
+                }
+                &.fa-instagram-square{
+                        color: #8a3ab9;
+                }
+                &.fa-github-square{
+                        color: #211F1F;
+                }
+                &.fa-linkedin{
+                        color: #0077B5;
+                }
+                &.fa-twitter-square{
+                        color: #1DA1F2;
+                }
+                &.fa-xing-square{
+                        color: #cfdc00;
+                }
+            }
+            
         }
     }
 
