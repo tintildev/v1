@@ -538,7 +538,8 @@ body {
       width: 2rem;
       margin-right: 1rem; }
   .project__btn {
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    text-align: center; }
 
 .section-break {
   grid-column: full-start / full-end;
@@ -609,6 +610,83 @@ body {
     width: 15vw;
     height: auto;
     margin-bottom: 2rem; }
+
+.popup {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black-transparent);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  @supports (--webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+      --webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: var(--color-black-transparent); } }
+  .popup__content {
+    width: 70vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    background-color: var(--color-white);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-primary);
+    opacity: 0;
+    transform: translate(-50% -50%) scale(1); }
+  .popup__top {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 1rem;
+    width: 90%;
+    height: 20vh;
+    overflow: hidden; }
+  .popup__center {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+    height: 50vh; }
+  .popup__img {
+    width: 30vw;
+    height: 20vh;
+    padding: 1rem;
+    object-fit: cover; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid var(--color-grey-light-2);
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    max-height: 20vh;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close:link, .popup__close:visited {
+    color: var(--color-grey-dark);
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: 1; }
+  .popup__close:hover {
+    color: var(--color-primary); }
 
 .header {
   background-color: var(--color-grey-dark-1);
