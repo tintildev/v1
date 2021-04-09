@@ -1,0 +1,26 @@
+.section-kontakt {
+    grid-column: center-start / center-end;
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+.kontakt{
+    display: grid;
+
+    &__info {
+        font-size: var(--big-font-size);
+        justify-self: center;
+        color: var(--color-black);
+        margin-bottom: 2rem;
+    }
+
+    &__btn {
+        justify-self: center;
+        width: 15vw;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+}
+

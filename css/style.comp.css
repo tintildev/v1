@@ -259,7 +259,7 @@ body {
 
 .btn {
   background-color: var(--color-primary);
-  color: #fff;
+  color: var(--color-white);
   border: solid 1px var(--color-primary);
   border-radius: 0;
   font-family: var(--font-display);
@@ -278,11 +278,13 @@ body {
     .btn__btn--animated:hover {
       background-color: var(--color-primary); }
   .btn__btn--smart {
+    color: var(--color-black);
     background-color: transparent;
     align-self: start;
     justify-self: start; }
     .btn__btn--smart:hover {
-      background-color: var(--color-primary); }
+      background-color: var(--color-primary);
+      color: var(--color-white); }
 
 .realtors {
   background-color: var(--color-secondary);
@@ -477,25 +479,30 @@ body {
 
 .portfolio {
   grid-column: center-start / center-end;
-  margin: 15rem 0;
+  margin: 10rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem; }
 
 .project {
   background-color: var(--color-grey-light-1);
+  box-shadow: 0 3rem 6rem var(--color-black-transparent);
+  border-radius: 3px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 3.5rem; }
+  grid-row-gap: 3.5rem;
+  grid-template-rows: 25rem repeat(3, mincontent); }
   .project__text {
     grid-row: 3 / 4;
     grid-column: 1 / -1;
     font-size: var(--default-font-size); }
-  .project__img {
-    width: 100%;
+  .project__imgDiv {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    z-index: 1; }
+    z-index: 1;
+    height: 25rem; }
+  .project__img {
+    width: 100%; }
   .project__like {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
@@ -582,6 +589,26 @@ body {
         margin-bottom: 0; } }
   .break__box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+
+.section-kontakt {
+  grid-column: center-start / center-end;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  height: 15vh; }
+
+.kontakt {
+  display: grid; }
+  .kontakt__info {
+    font-size: var(--big-font-size);
+    justify-self: center;
+    color: var(--color-black);
+    margin-bottom: 2rem; }
+  .kontakt__btn {
+    justify-self: center;
+    width: 15vw;
+    height: auto;
+    margin-bottom: 2rem; }
 
 .header {
   background-color: var(--color-grey-dark-1);
