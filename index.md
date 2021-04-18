@@ -22,7 +22,7 @@
             <h1 class="heading-1 heading--main">MARTIN KLESTIL.</h1>
             <h1 class="heading-1 heading--main">I love to code.</h1>
             <h4 class="heading-4 heading--sub">I'm Martin Klestil from Tulln, Austria. Here you can see my path to becoming a web developer.</h4>
-            <button class="btn btn__btn--animated">My portfolio</button>
+            <a href="#portfolio"><button class="btn btn__btn--animated">My portfolio</button></a>
             
         </header>
 
@@ -37,8 +37,9 @@
             </div>
         </section>
         <section class="section-break">
-            <div class="break-container">
-                <div class="break-box">
+            <h2 class="heading-2--light break__title">What I Do</h2>
+            <div class="break__container">
+                <div class="break__box">
                     
                     <i class="feature-box__icon icon-basic-world"></i>
                     <h3 class="heading-tertiary u-margin-bottom-small">Frontend</h3>
@@ -46,7 +47,7 @@
                         HTML, CSS, SASS, <br> JavaScript, React, Angular
                     </p>
                 </div>
-                <div class="break-box">
+                <div class="break__box">
                     
                     <i class="feature-box__icon icon-basic-world"></i>
                     <h3 class="heading-tertiary u-margin-bottom-small">Backend</h3>
@@ -54,7 +55,7 @@
                         Java, Spring, php, Python
                     </p>
                 </div>
-                <div class="break-box">
+                <div class="break__box">
                     
                     <i class="feature-box__icon icon-basic-world"></i>
                     <h3 class="heading-tertiary u-margin-bottom-small">Database</h3>
@@ -62,7 +63,7 @@
                         MySQL, SQLite
                     </p>
                 </div>
-                <div class="break-box">
+                <div class="break__box">
                     
                     <i class="feature-box__icon icon-basic-world"></i>
                     <h3 class="heading-tertiary u-margin-bottom-small">Design</h3>
@@ -119,8 +120,8 @@
         <section class="section-story">
             <h2 class="heading-2--black heading--section">Some Things I’ve Built</h2>
             <div class="story__pictures">
-                <img src="img/FF.png" alt="Feuerwehr Michelhausen" class="story__img--1">
-                <img src="img/FF-2.png" alt="Feuerwehr Michelhausen" class="story__img--2">
+                <img src="img/FF.png" alt="Feuerwehr Michelhausen" class="story__img--1" loading="lazy">
+                <img src="img/FF-2.png" alt="Feuerwehr Michelhausen" class="story__img--2" loading="lazy">
             </div>
     
             <div class="story__content">
@@ -129,14 +130,15 @@
                 <p class="story__text">
                     This project was implemented with Sass, JavaScript, PHP and Wordpress.
                 </p>
-                <button class="btn"><a href="https://www.ff-michelhausen.at/" target="_blank"></a>Feuerwehr Michelhausen</button>
+                <a href="https://www.ff-michelhausen.at/" target="_blank"><button class="btn">Feuerwehr Michelhausen</button></a>
             </div>
         </section>
         
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="project">
-                <img src="img/Game-1.png" alt="Game 1" class="project__img">
-                <img class="project__like" alt="heart" src="img/heart.svg"></img>
+                <div class="project__imgDiv">
+                    <img src="img/Game-1.png" alt="Game 1" class="project__img" loading="lazy">
+                </div>
                 <h5 class="project__name">click game</h5>
                 <div class="project__tech">
                     <img class="" alt="map-pin" src="img/zahnrad.svg"></img>
@@ -150,11 +152,12 @@
                     <p>A small JavaScript game.</p>
                 </div>
                 
-                <button class="btn project__btn">Show</button>
+                <a class="btn project__btn" href="#popup">Show</a>
             </div>
             <div class="project">
-                <img src="img/Game-2.png" alt="dino" class="project__img">
-                <img class="project__like" alt="heart" src="img/heart.svg"></img>
+                <div class="project__imgDiv">
+                    <img src="img/Game-2.png" alt="dino" class="project__img" loading="lazy">
+                </div>
                 <h5 class="project__name">Dino Jump</h5>
                 
                 <div class="project__tech">
@@ -169,14 +172,16 @@
                     <p>A small JavaScript game where a dinosaur has to jump over cactuses.</p>
                 </div>
                 
-                <button class="btn project__btn">Show</button>
+                <a class="btn project__btn" href="#popup">Show</a>
             </div>
             <div class="project">
-                <img src="img/mk-5.jpg" alt="House 1" class="project__img">
-                <img class="project__like" alt="heart" src="img/heart.svg"></img>
-                <h5 class="project__name">Game 3</h5>
+                <div class="project__imgDiv">
+                    <img src="img/HP.jpg" alt="Portfolio" class="project__img" loading="lazy"> 
+                </div>
+                <h5 class="project__name">Portfolio</h5>
+                
                 <div class="project__tech">
-                    <img class="" alt="map-pin" src="img/zahnrad.svg"></img>
+                    <img class="" alt="map-pin" src="img/zahnrad.svg"></img> 
                     <p>JavaScript</p>
                 </div>
                 <div class="project__area">
@@ -184,29 +189,56 @@
                     <p>small</sup></p>
                 </div>
                 <div class="project__text">
-                    <p>A small JavaScript game where a dinosaur has to jump over cactuses.</p>
+                    <p>A first portfolio page for me.</p>
                 </div>
                 
-                <button class="btn project__btn">Show</button>
+                <a class="btn project__btn" href="#popup">Show</a>
             </div>
             
         </section>
+        <section class="section-kontakt">
+            <div class="kontakt">
+                <p class="kontakt__info">Whether you have an idea for a project or just want to chat, feel free to shoot me an email!</p>
+                <a class="kontakt__btn" href="mailto:"><button class="btn btn__btn--smart">Say Hello</button></a>
+            </div>
+        </section>
 
         <footer class="footer">
+            
             <img class="footer__logo" src="img/logo.png">
             <hr>
             <ul class="nav footer__nav">
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Impressum</a></li>
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Datenschutz</a></li>
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link">Kontakt</a></li>
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank">LinkedIn</a></li>
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank">Twitter</a></li>
-                <li class="footer__nav--item"><a href="#" class="footer__nav--link" target="_blank">Xing</a></li>
+                <li class="footer__nav--item"><a href="https://github.com/mklestil" class="footer__nav--link" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li class="footer__nav--item"><a href="https://www.linkedin.com/in/martin-klestil/" class="footer__nav--link" target="_blank"><i class="fab fa-linkedin"></i></i></a></li>
+                <li class="footer__nav--item"><a href="https://twitter.com/MKlestil" class="footer__nav--link" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                <li class="footer__nav--item"><a href="https://www.xing.com/profile/Martin_Klestil2" class="footer__nav--link" target="_blank"><i class="fab fa-xing-square"></i></a></li>
             </ul>
             <hr>
             <p class="footer__copyright">
                 &copy; Copyright 2021 by Martin Klestil. 
                 </p>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__top">
+                    <img src="img/mk-5.jpg" alt="Platzhalter" class="popup__img" loading="lazy"> 
+                    <img src="img/mk-5.jpg" alt="Platzhalter" class="popup__img" loading="lazy"> 
+                </div>
+                <div class="popup__center">
+                    <a href="#portfolio" class="popup__close">&times;</a>
+                    <h2 class="heading-2--black">Platzhalter</h2>
+                    <p class="popup__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+                        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        ero eos et accusam et justo duo dolores et ea rebum. Stet clita 
+                        kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+                        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        <a href="#portfolio" class="btn btn--green">Close</a>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
