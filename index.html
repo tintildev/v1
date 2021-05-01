@@ -152,7 +152,7 @@
                     <p>A small JavaScript game.</p>
                 </div>
                 
-                <a class="btn project__btn" href="#popup">Show</a>
+                <a class="btn project__btn" href="#popup" id="1">Show</a>
             </div>
             <div class="project">
                 <div class="project__imgDiv">
@@ -172,7 +172,7 @@
                     <p>A small JavaScript game where a dinosaur has to jump over cactuses.</p>
                 </div>
                 
-                <a class="btn project__btn" href="#popup">Show</a>
+                <a class="btn project__btn" href="#popup" id="2">Show</a>
             </div>
             <div class="project">
                 <div class="project__imgDiv">
@@ -192,7 +192,7 @@
                     <p>A first portfolio page for me.</p>
                 </div>
                 
-                <a class="btn project__btn" href="#popup">Show</a>
+                <a class="btn project__btn" href="#popup" id="3">Show</a>
             </div>
             
         </section>
@@ -222,13 +222,13 @@
         <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__top">
-                    <img src="img/mk-5.jpg" alt="Platzhalter" class="popup__img" loading="lazy"> 
-                    <img src="img/mk-5.jpg" alt="Platzhalter" class="popup__img" loading="lazy"> 
+                    <img src="img/mk-5.jpg" alt="Platzhalter" id="popup_img" class="popup__img" loading="lazy"> 
+                    <img src="img/mk-5.jpg" alt="Platzhalter" id="popup_img" class="popup__img" loading="lazy"> 
                 </div>
                 <div class="popup__center">
                     <a href="#portfolio" class="popup__close">&times;</a>
-                    <h2 class="heading-2--black">Platzhalter</h2>
-                    <p class="popup__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+                    <h2 class="heading-2--black" id="popup_name">Platzhalter</h2>
+                    <p class="popup__text" id="popup_description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
                         et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
                         ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                         ero eos et accusam et justo duo dolores et ea rebum. Stet clita 
@@ -239,6 +239,7 @@
                 </div>
             </div>
         </div>
+        <script src="./js/popup.js"></script>
 
     </body>
 </html>
