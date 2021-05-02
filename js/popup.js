@@ -39,11 +39,25 @@ class Popup{
     
         }
         else if(this.theId === "2"){
-            document.getElementById("popup1").id ="popup";
+            document.getElementById("popup2").id ="popup";
             img.src = this.data[1].img;
             img2.src = this.data[1].img;
             title.innerHTML = this.data[1].name;
             text.innerHTML = this.data[1].description; 
+
+            content.id = "game2";
+            content.innerHTML ="";
+            let c = document.createElement("div");
+            c.id = "character";
+            let b = document.createElement("div");
+            b.id ="block";
+
+            let game_script2 = document.createElement("script");
+            game_script2.setAttribute('src', './js/dinogame.js');
+            
+            content.appendChild(b);
+            content.appendChild(c);
+            content.appendChild(game_script2);
             
         }
         else if(this.theId === "3"){
