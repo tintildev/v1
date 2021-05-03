@@ -107,11 +107,15 @@ document.querySelectorAll(".project__btn").forEach(item =>{
     })
 });
 
-document.getElementById("popup__close").addEventListener("click", event => {
+document.getElementById("popup__close--0").addEventListener("click", event => {
     document.getElementById("popup").id = "popup1";
 });
 
-document.getElementById("popup__close2").addEventListener("click", event => {
+document.getElementById("popup__close--1").addEventListener("click", event => {
+    document.getElementById("popup").id = "popup1";
+});
+
+document.getElementById("popup__close--2").addEventListener("click", event => {
     document.getElementById("popup").id = "popup2";
     content.id = "popup__content-div";
     content.removeChild(content.firstChild);
