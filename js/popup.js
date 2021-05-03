@@ -5,6 +5,7 @@ let img2 = document.getElementById("popup_img-2");
 let title = document.getElementById("popup_name");
 let text = document.getElementById("popup_description")
 let content = document.getElementById("popup__content-div");
+let link = document.getElementById("popup__link");
 
 class Popup{
 
@@ -14,9 +15,9 @@ class Popup{
         this.data = [
             {img: "img/Game-1.png", name: "click game", description: "A small JavaScript game."},
             {img: "img/Game-2.png", name: "Dino Jump", description: "A small JavaScript game where a dinosaur has to jump over cactuses."},
-            {img: "img/HP.jpg", name: "Portfolio", description: "A first portfolio page for me."},
-            {img: "img/FF-Michelhausen.jpg", name: "FF-Michelhausen", description: "Modern website for the Michelhausen fire brigade. This project was implemented with Sass, JavaScript, PHP and Wordpress."},
-            {img: "img/heartbeat.jpg", name: "HeartBeatClubbing", description: "A website for the purchase of defibrillators for the Tulln district."}
+            {img: "img/HP.jpg", name: "Portfolio", description: "A first portfolio page for me.", link: "#"},
+            {img: "img/FF-Michelhausen.jpg", name: "FF-Michelhausen", description: "Modern website for the Michelhausen fire brigade. This project was implemented with Sass, JavaScript, PHP and Wordpress." , link: "https://www.ff-michelhausen.at/"},
+            {img: "img/heartbeat.jpg", name: "HeartBeatClubbing", description: "A website for the purchase of defibrillators for the Tulln district." , link: "https://www.heartbeat-clubbing.at/"}
         ]
         
     }
@@ -66,6 +67,8 @@ class Popup{
             img2.src = this.data[2].img;
             title.innerHTML = this.data[2].name;
             text.innerHTML = this.data[2].description; 
+            link.href= this.data[2].link;
+            link.innerHTML= this.data[2].name;
             
         }
         else if(this.theId === "4"){
@@ -74,6 +77,10 @@ class Popup{
             img2.src = this.data[3].img;
             title.innerHTML = this.data[3].name;
             text.innerHTML = this.data[3].description; 
+            link.href = this.data[3].link;
+            link.innerHTML= this.data[3].name;
+            link.target ="_blank";
+            link.rel= "noopener";
             
         }
         else if(this.theId === "5"){
@@ -82,6 +89,10 @@ class Popup{
             img2.src = this.data[4].img;
             title.innerHTML = this.data[4].name;
             text.innerHTML = this.data[4].description; 
+            link.href= this.data[4].link;
+            link.innerHTML= this.data[4].name;
+            link.target ="_blank";
+            link.rel= "noopener";
             
         }
         else {

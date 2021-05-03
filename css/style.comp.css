@@ -285,6 +285,8 @@ body {
     .btn__btn--smart:hover {
       background-color: var(--color-primary);
       color: var(--color-white); }
+  .btn-popup {
+    margin: 1rem; }
 
 .realtors {
   background-color: var(--color-secondary);
@@ -671,6 +673,9 @@ body {
     max-height: 20vh;
     overflow: hidden;
     text-overflow: ellipsis; }
+  .popup__links {
+    display: flex;
+    justify-content: center; }
   .popup:target {
     opacity: 1;
     visibility: visible; }
