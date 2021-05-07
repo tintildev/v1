@@ -19,7 +19,7 @@
 
     &__content{
         width: 70vw;
-        height: 70vh;
+        height: 80vh;
 
         position: absolute;
         top: 50%;
@@ -89,6 +89,11 @@
     &__links {
         display: flex;
         justify-content:center;
+        height: 10vh;
+
+        @media only screen and (max-width: var(--bp-medium)){
+            flex-direction: column;
+        }
     }
 
     &:target {

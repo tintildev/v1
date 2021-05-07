@@ -286,7 +286,11 @@ body {
       background-color: var(--color-primary);
       color: var(--color-white); }
   .btn-popup {
-    margin: 1rem; }
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    vertical-align: middle; }
 
 .realtors {
   background-color: var(--color-secondary);
@@ -631,7 +635,7 @@ body {
       background-color: var(--color-black-transparent); } }
   .popup__content {
     width: 70vw;
-    height: 70vh;
+    height: 80vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -675,7 +679,11 @@ body {
     text-overflow: ellipsis; }
   .popup__links {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    height: 10vh; }
+    @media only screen and (max-width: var(--bp-medium)) {
+      .popup__links {
+        flex-direction: column; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
