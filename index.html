@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,67 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
     <!--Icon-->
 </head>
-<body>
-    <div class="container">
-        <header class="header">
 
-        </header>
-        <main>
-            
-        </main>
-    </div>
+<body>
+
+    <header class="header">
+        <img src="img/logo.png" alt="Martin Klestil Logo" class="header__logo">
+        <h3 class="heading-3">Hi I'm Martin Klestil</h3>
+        <h1 class="heading-1 heading--main"> I'm from Austria and <br> I love to code.</h1>
+        <h4 class="heading-4 heading--sub">Currently i'm working as a Paramedic and i teach myself to code.</h4>
+        <a href="#portfolio"><button class="btn btn__btn--animated">My portfolio</button></a>
+    </header>
+    <main>
+        <div class="container">
+            <section class="section section--about">
+                <div class="about">
+                    <h2 class="heading-2--black">About Me</h2>
+                    <img class="about__img" alt="Img Martin" src="img/martin.png"></img>
+                    <p class="about__text">
+                        I love programming and that's why I want to turn my hobby into a job.
+                        <br>On this page you can see some of my projects.
+                    </p>
+                </div>
+            </section>
+            <section class="section section--skills">
+                <h2 class="heading-2--light skills__title">What I Do</h2>
+                <div class="skills__container">
+                    <div class="skills__box">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Frontend</h3>
+                        <p class="feature-box__text feature-box__text">
+                            HTML, CSS, SASS, <br> JavaScript, React
+                        </p>
+                    </div>
+                    <div class="skills__box">
+                        <object type="image/svg+xml" data="img/zahnrad.svg" class="icon icon--back"></object>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Backend</h3>
+                        <p class="feature-box__text feature-box__text">
+                            Java, Spring, php, Python
+                        </p>
+                    </div>
+                    <div class="skills__box">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Database</h3>
+                        <p class="feature-box__text feature-box__text">
+                            MySQL, SQLite
+                        </p>
+                    </div>
+                    <div class="skills__box">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Design</h3>
+                        <p class="feature-box__text feature-box__text">
+                            Adobe - Photoshop, InDesign, <br> Affinity - Photo, Design
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
     <footer>
-            
+
     </footer>
-    
+
 </body>
+
 </html>

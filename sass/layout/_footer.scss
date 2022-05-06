@@ -1,0 +1,94 @@
+.footer {
+    background-color: var(--color-secondary);
+    grid-column: full-start / full-end;
+    padding: 4rem;
+    display: grid;
+
+    &__logo{
+        justify-self: center;
+        margin-bottom: 2rem;
+        width: 20vw;
+        height: auto;
+    }
+
+    &__nav {
+        list-style: none;
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-gap: 2rem;
+        align-items: center;
+
+        &--item {
+            margin: 1rem;
+        }
+    
+        &--link:link,
+        &--link:visited {
+            font-size: var(--default-font-size);
+            color: #fff;
+            text-decoration: none;
+            font-family: var(--font-display);
+            text-transform: uppercase;
+            text-align: center;
+            padding: 1.5rem;
+            display: block;
+            transition: all .2s;
+        }
+    
+        &--link:hover,
+        &--link:active{
+            background-color: rgba(#fff, .5);
+            transform: translateY(-3px);
+
+            & i {
+                &.fa-facebook-square{
+                        color: #3B5998;
+                }
+                &.fa-instagram-square{
+                        color: #8a3ab9;
+                }
+                &.fa-github-square{
+                        color: #211F1F;
+                }
+                &.fa-linkedin{
+                        color: #0077B5;
+                }
+                &.fa-twitter-square{
+                        color: #1DA1F2;
+                }
+                &.fa-xing-square{
+                        color: #cfdc00;
+                }
+            }
+            
+        }
+    }
+
+    &__info {
+        font-size: var(--big-font-size);
+        justify-self: center;
+        color: var(--color-white);
+        margin-bottom: 2rem;
+    }
+
+    &__btn {
+        justify-self: center;
+        width: 15vw;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    &__copyright {
+        font-size: var(--default-font-size);
+        color: var(--color-grey-light-1);
+        margin-top: 6rem;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        width: 70%;
+    }
+}
+
+
+

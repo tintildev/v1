@@ -1,0 +1,49 @@
+.section-features {
+    grid-column: center-start / center-end;
+    margin: 15rem 0;
+}
+.features__Container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    &--Technologies {
+        display: grid;
+        // auto-fit - different numbers of columns are created depending on how many fit into the viewport.
+        grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+        grid-row: 10vw;
+        grid-gap: 6rem;  
+        align-items: start;
+    }
+}
+
+
+
+.feature {
+
+    display: grid;
+    grid-template-columns: min-content;
+    //for the distances
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
+
+    &__icon {
+        fill: var(--color-primary);
+        width: 4.5rem;
+        height: 4.5rem;
+        grid-row: 1 / span 2;
+    }
+
+    &__text {
+        font-size: 1.7rem;
+
+        &--center {
+            text-align: center;
+            font-size: 1.7rem;
+            margin-bottom: 5vh;
+        }
+    }
+
+    &__heading {
+        grid-column: 1 / -1;
+    }
+}
