@@ -167,6 +167,9 @@ h1, h2, h3, h4, h5 {
 .fas {
   font-size: 4rem; }
 
+.icon {
+  width: 25px; }
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
