@@ -27,4 +27,10 @@
             padding: 10rem 0;
         }
     }
+
+    &--story{
+        grid-column: center-start / center-end;
+        display: grid;
+        grid-template-columns: 20vw 20vw 10vw 20vw 20vw;
+    }
 }
