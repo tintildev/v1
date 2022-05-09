@@ -777,7 +777,7 @@ h1, h2, h3, h4, h5 {
     .header {
       padding: 5rem; } }
   .header__logo {
-    height: 3rem;
+    height: 10rem;
     justify-self: center; }
   .header__seenon-text {
     display: grid;
