@@ -1,15 +1,19 @@
 .footer {
     background-color: var(--color-secondary);
-    grid-column: full-start / full-end;
     padding: 4rem;
     display: grid;
 
     &__logo{
         justify-self: center;
         margin-bottom: 2rem;
-        width: 20vw;
+        width: 50vw;
         height: auto;
+
+        @media only screen and (min-width: var(--bp-medium)){
+            width: 30vw;
+        }
     }
+    
 
     &__nav {
         list-style: none;
