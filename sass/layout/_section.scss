@@ -4,9 +4,6 @@
         grid-column: 1 / -1;
         margin-top: 10vh;
 
-        @media only screen and (min-width: var(--bp-medium)){
-            grid-column: 4 / 7;
-        }
     }
 
     &--skills{
@@ -42,5 +39,19 @@
             grid-column: center-start / center-end;
             grid-template-columns: 20vw 20vw 10vw 20vw 20vw;
         }
+    }
+
+    &--portfolio{
+        margin: 10rem 3rem;
+        grid-column: 1 / -1;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 7rem;
+
+        @media only screen and (min-width: var(--bp-medium)){
+            grid-column: center-start / center-end;
+        }
+        
     }
 }

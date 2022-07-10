@@ -24,10 +24,7 @@
   --default-border-radius: 3px;
   --default-shadow: 0 3rem 6rem var(--color-black-transparent);
   --default-shadow-light: 0 1.5rem 4rem var(--color-black-transparent);
-  --bp-largest: 75em;
-  --bp-large: 62.5em;
-  --bp-medium: 50em;
-  --bp-small: 37.5em; }
+  --bp-medium: 50em; }
 
 *,
 *::before,
@@ -495,13 +492,6 @@ h1, h2, h3, h4, h5 {
     object-fit: cover;
     display: block; }
 
-.portfolio {
-  grid-column: center-start / center-end;
-  margin: 10rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 7rem; }
-
 .project {
   background-color: var(--color-grey-light-1);
   box-shadow: 0 3rem 6rem var(--color-black-transparent);
@@ -754,48 +744,19 @@ h1, h2, h3, h4, h5 {
 
 .header {
   background-color: var(--color-grey-dark-1);
-  grid-column: full-start / full-end;
+  grid-column: 1 / -1;
   background-image: linear-gradient(var(--color-secondary-light), var(--color-secondary-light)), url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
-  padding: 8rem;
-  padding-top: 4rem;
+  padding: 5rem;
   display: grid;
   grid-template-rows: minmax(20rem, min-content) repeat(8, min-content);
   grid-template-columns: minmax(min-content, max-content);
   grid-row-gap: 1.5rem;
   justify-content: center; }
-  @media only screen and (max-width: var(--bp-medium)) {
-    .header {
-      grid-column: 1 / -1; } }
-  @media only screen and (max-width: var(--bp-small)) {
-    .header {
-      padding: 5rem; } }
   .header__logo {
     height: 15rem;
     justify-self: center; }
-  .header__seenon-text {
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    grid-column-gap: 1.5rem;
-    align-items: center;
-    font-size: var(--big-font-size);
-    color: var(--color-grey-light-2); }
-    .header__seenon-text::before, .header__seenon-text::after {
-      content: "";
-      height: 1px;
-      display: block;
-      background-color: currentColor; }
-  .header__seenon-logos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 3rem;
-    justify-items: center;
-    align-content: center; }
-    .header__seenon-logos img {
-      max-height: 2.5rem;
-      max-width: 100%;
-      filter: brightness(70%); }
 
 .footer {
   background-color: var(--color-secondary);
@@ -864,9 +825,6 @@ h1, h2, h3, h4, h5 {
 .section--about {
   grid-column: 1 / -1;
   margin-top: 10vh; }
-  @media only screen and (min-width: var(--bp-medium)) {
-    .section--about {
-      grid-column: 4 / 7; } }
 
 .section--skills {
   grid-column: 1 / -1;
@@ -891,3 +849,13 @@ h1, h2, h3, h4, h5 {
     .section--story {
       grid-column: center-start / center-end;
       grid-template-columns: 20vw 20vw 10vw 20vw 20vw; } }
+
+.section--portfolio {
+  margin: 10rem 3rem;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem; }
+  @media only screen and (min-width: var(--bp-medium)) {
+    .section--portfolio {
+      grid-column: center-start / center-end; } }
