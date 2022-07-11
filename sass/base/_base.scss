@@ -68,29 +68,10 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 90vh repeat(6, minmax(40vh, min-content));
-    grid-template-columns: [full-start] minmax(6rem, 1fr) 
-                           [center-start] repeat(8,[col-start] minmax(min-content, 14rem)[col-end])[center-end]
-                           minmax(6rem, 1fr)  [full-end];
+    grid-template-rows: 90vh repeat(3, minmax(40vh, min-content));
     
-    @media only screen and (max-width: var(--bp-large)){
-        grid-template-rows: 80vh repeat(6, minmax(40vh, min-content));
-        grid-template-columns: [full-start] minmax(6rem, 1fr) 
-                           [center-start] repeat(8,[col-start] minmax(min-content, 14rem)[col-end])[center-end]
-                           minmax(6rem, 1fr)  [full-end];
-    }
-
     @media only screen and (max-width: var(--bp-medium)){
-        grid-template-rows: calc(100vh - 6rem);
+        grid-template-rows: 80vh repeat(3, minmax(40vh, min-content));
     }
-
-    &--single{
-        display: grid;
-        grid-template-rows: 80vh 20vh;
-        grid-template-columns: [full-start] minmax(6rem, 1fr) 
-                           [center-start] repeat(8,[col-start] minmax(min-content, 14rem)[col-end])[center-end]
-                           minmax(6rem, 1fr)  [full-end];
-    }
-
    
 }

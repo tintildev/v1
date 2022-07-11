@@ -27,18 +27,12 @@
 
         @media only screen and (min-width: var(--bp-medium)){
             padding: 15rem 0;
-            grid-column: full-start / full-end;
         }
     }
 
     &--story{
         grid-column: 1 / -1;
         display: grid;
-
-        @media only screen and (min-width: var(--bp-medium)){
-            grid-column: center-start / center-end;
-            grid-template-columns: 20vw 20vw 10vw 20vw 20vw;
-        }
     }
 
     &--portfolio{
@@ -48,10 +42,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 7rem;
-
-        @media only screen and (min-width: var(--bp-medium)){
-            grid-column: center-start / center-end;
-        }
         
     }
 }
