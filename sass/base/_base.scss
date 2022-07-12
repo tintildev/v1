@@ -68,10 +68,5 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 90vh repeat(3, minmax(40vh, min-content));
-    
-    @media only screen and (max-width: var(--bp-medium)){
-        grid-template-rows: 80vh repeat(3, minmax(40vh, min-content));
-    }
-   
+    grid-template-rows: 70vh repeat(3, min-content);
 }
