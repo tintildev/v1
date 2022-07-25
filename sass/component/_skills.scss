@@ -24,7 +24,7 @@
         box-shadow: var(--default-shadow);
         transition: transform .3s;
     
-        @media only screen and (max-width: var(--bp-medium)){
+        @media only screen and (max-width: $bp-medium){
             padding: 2rem;
         }
     
@@ -36,7 +36,7 @@
             background-clip: text;
             color: transparent;
     
-            @media only screen and (max-width: var(--bp-medium)){
+            @media only screen and (max-width: $bp-medium){
                 margin-bottom: 0;
             }
         }

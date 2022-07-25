@@ -9,7 +9,7 @@
         width: 50vw;
         height: auto;
 
-        @media only screen and (min-width: var(--bp-medium)){
+        @media only screen and (min-width: $bp-medium){
             width: 30vw;
         }
     }

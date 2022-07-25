@@ -1,3 +1,6 @@
+// RESPONSIVE BREAKPOINTS
+$bp-medium: 50em; //800px
+
 :root {
     // COLOR VARIABLES
     --color-primary: #55c57a;
@@ -34,9 +37,7 @@
     --default-shadow: 0 3rem 6rem var(--color-black-transparent);
     --default-shadow-light: 0 1.5rem 4rem var(--color-black-transparent);
 
-    // RESPONSIVE BREAKPOINTS
-    --bp-medium: 50em; //800px
-  }
+}
 
 *,
 *::before,

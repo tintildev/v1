@@ -22,11 +22,11 @@
         overflow: hidden;
 
 
-        @media only screen and (max-width: var(--bp-medium)){
-            padding-top: 0rem;
-            padding-left: 0rem;
-            padding-right: 0rem;
-            padding-bottom: 0rem;
+        @media only screen and (max-width: $bp-medium){
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 1rem;
         }
 
         & img{
@@ -78,7 +78,7 @@
         align-content: center;
         justify-items: start;
 
-        @media only screen and (min-width: var(--bp-medium)){
+        @media only screen and (min-width: $bp-medium){
             padding: 6rem 8vw;
         }
     }
