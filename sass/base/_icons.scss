@@ -1,14 +1,27 @@
-//Alt ?
-
-.fab {
-    font-size: 4rem;
-}
-
-.fas {
-    font-size: 4rem;
-}
-
 .icon{
-    width: 25px;
-    
+  width: 25px; 
 }
+
+.footer__icon {
+  color: white;
+  font-weight: 400;
+  &--facebook:hover{
+          color: #3B5998;
+  }
+  &--instagram:hover{
+          color: #8a3ab9;
+  }
+  &--github:hover{
+          color: #211F1F;
+  }
+  &--linkedin:hover{
+          color: #0077B5;
+  }
+  &--twitter:hover{
+          color: #1DA1F2;
+  }
+  &--xing:hover{
+          color: #cfdc00;
+  }
+}
+
