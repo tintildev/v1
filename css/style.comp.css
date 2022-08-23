@@ -38,7 +38,7 @@ html {
   /* 10px/16px = 62.5% -> 1rem = 10px */ }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   color: var(--color-grey-dark-2);
   font-weight: 300;
   line-height: 1.6; }
