@@ -22,7 +22,7 @@
         overflow: hidden;
 
 
-        @media only screen and (max-width: $bp-medium){
+        @media only screen and (max-width: 600px){
             padding-top: 1rem;
             padding-left: 1rem;
             padding-right: 1rem;
@@ -78,7 +78,7 @@
         align-content: center;
         justify-items: start;
 
-        @media only screen and (min-width: $bp-medium){
+        @media only screen and (min-width: 600px){
             padding: 6rem 8vw;
         }
     }

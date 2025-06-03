@@ -19,4 +19,11 @@
         height: 15rem;
         justify-self: center;
     }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
 }

@@ -1,18 +1,18 @@
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
-@import "base/animation";
-@import "base/icons";
+@use "base/base";
+@use "base/typography";
+@use "base/utilities";
+@use "base/animation";
+@use "base/icons";
 
-@import "component/about";
-@import "component/button";
-@import "component/features";
-@import "component/story";
-@import "component/project";
-@import "component/skills";
-@import "component/kontakt";
+@use "component/about";
+@use "component/button";
+@use "component/features";
+@use "component/story";
+@use "component/project";
+@use "component/skills";
+@use "component/kontakt";
 
 
-@import "layout/header";
-@import "layout/footer";
-@import "layout/section";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/section";
