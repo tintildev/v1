@@ -22,7 +22,7 @@ In this project I want create a landing page for me.
 
 
 ### Links
-- Live Site URL: [Here is my live solution](https://mklestil.github.io/v1/)
+- Live Site URL: [Here is my live solution](https://tintildev.github.io/v1/)
 
 ### Resources
 - Images: my personal pictures
@@ -30,9 +30,9 @@ In this project I want create a landing page for me.
 
 
 ## Author
-- Website - [Martin Klestil](https://github.com/mklestil)
+- Website - [Martin Klestil](https://github.com/tintildev)
 - Frontend Mentor - [@mklestil](https://www.frontendmentor.io/profile/mklestil)
-- Twitter - [@mklestil](https://twitter.com/MKlestil)
+- Twitter - [@mklestil.bsky.social‬]([https://twitter.com/MKlestil](https://bsky.app/profile/mklestil.bsky.social))
 - LinkedIn - [Martin Klestil](https://www.linkedin.com/in/martin-klestil/)
 
 
