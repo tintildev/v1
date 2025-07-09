@@ -29,10 +29,11 @@ In this project I want create a landing page for me.
 - Icons: my personal icons
 
 
-## Author
-- Website - [Martin Klestil](https://github.com/tintildev)
-- Frontend Mentor - [@mklestil](https://www.frontendmentor.io/profile/mklestil)
-- Twitter - [@mklestil.bsky.social‬]([https://twitter.com/MKlestil](https://bsky.app/profile/mklestil.bsky.social))
+## Author TintilDev
+- Website - [TintilDev](https://github.com/tintildev)
+- Frontend Mentor - [@mklestil](https://www.frontendmentor.io/profile/tintildev)
+- Bluesky - [@mklestil.bsky.social‬](https://bsky.app/profile/mklestil.bsky.social)
 - LinkedIn - [Martin Klestil](https://www.linkedin.com/in/martin-klestil/)
+- Dev.to [TintilDev](https://dev.to/tintildev)
 
 
