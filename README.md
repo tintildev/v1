@@ -31,8 +31,8 @@ In this project I want create a landing page for me.
 
 ## Author TintilDev
 - Website - [TintilDev](https://github.com/tintildev)
-- Frontend Mentor - [@mklestil](https://www.frontendmentor.io/profile/tintildev)
-- Bluesky - [@mklestil.bsky.social‬](https://bsky.app/profile/mklestil.bsky.social)
+- Frontend Mentor - [Tintildev](https://www.frontendmentor.io/profile/tintildev)
+- Bluesky - [@tintildev‬](https://bsky.app/profile/tintildev.bsky.social)
 - LinkedIn - [Martin Klestil](https://www.linkedin.com/in/martin-klestil/)
 - Dev.to [TintilDev](https://dev.to/tintildev)
 
